@@ -1,9 +1,9 @@
 stonegenerator:
   commands:
     level:
-      description: "This method shows your island Magic Generator Tier."
+      description: "This method shows your island Generator Tier."
     main:
-      description: "Main method for Magic Cobblestone Generator. Shows help."
+      description: "Main method for Cobblestone Generator. Shows help."
     alllevels:
       description: "This method returns all magic cobblestone generator tiers for current world."
   messages:

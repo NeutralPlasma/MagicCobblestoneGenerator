@@ -13,13 +13,13 @@ import world.bentobox.magiccobblestonegenerator.StoneGeneratorAddon;
 /**
  * This class process given block transforming to random object from input configuration.
  */
-public class MagicGenerator
+public class BasicGenerator
 {
 	/**
 	 * Default constructor. Inits Generator once.
 	 * @param addon Magic Cobblestone Generator addon.
 	 */
-	public MagicGenerator(StoneGeneratorAddon addon)
+	public BasicGenerator(StoneGeneratorAddon addon)
 	{
 		this.addon = addon;
 	}

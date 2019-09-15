@@ -12,7 +12,7 @@ import world.bentobox.level.Level;
 import world.bentobox.magiccobblestonegenerator.commands.StoneGeneratorMainCommand;
 import world.bentobox.magiccobblestonegenerator.config.Settings;
 import world.bentobox.magiccobblestonegenerator.listeners.MainGeneratorListener;
-import world.bentobox.magiccobblestonegenerator.tasks.MagicGenerator;
+import world.bentobox.magiccobblestonegenerator.tasks.BasicGenerator;
 
 
 /**
@@ -84,7 +84,7 @@ public class StoneGeneratorAddon extends Addon
 		{
 			this.stoneGeneratorManager = new StoneGeneratorManager(this);
 			this.stoneGeneratorManager.addGameModes(hookedGameModes);
-			this.generator = new MagicGenerator(this);
+			this.generator = new BasicGenerator(this);
 
 			// Try to find Level addon and if it does not exist, display a warning
 
@@ -177,7 +177,7 @@ public class StoneGeneratorAddon extends Addon
 	 * This method returns Magic Generator.
 	 * @return Magic Generator object.
 	 */
-	public MagicGenerator getGenerator()
+	public BasicGenerator getGenerator()
 	{
 		return this.generator;
 	}
@@ -233,9 +233,9 @@ public class StoneGeneratorAddon extends Addon
 	private StoneGeneratorManager stoneGeneratorManager;
 
 	/**
-	 * Variable holds MagicGenerator object.
+	 * Variable holds BasicGenerator object.
 	 */
-	private MagicGenerator generator;
+	private BasicGenerator generator;
 
 	/**
 	 * This boolean indicate if economy is enabled.
